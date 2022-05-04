@@ -4,23 +4,42 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/favicon_16x16.png" type="image/png">
-
-    <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 아이콘 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <title>풀무원 녹즙</title>
     <!--[if lt IE 9]>
-  <script src="js/html5shiv.js"></script>
-  <![endif]-->
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
 
     <script src="js/respond.min.js"></script>
 
     <script src="js/prefixfree.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    
+
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
     <script src="js/swiper/swiper.min.js"></script>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -35,6 +54,31 @@
         <i></i>
         top
     </button>
+    <!-- 모달창 -->
+    <div class="modal">
+        <div class="modal-wrap">
+            <div class="modal-box modal-front">
+
+                <h1> <i class="fas fa-seedling"></i> PULMUONE </h1>
+                <h2>이 사이트는 스터디용으로 제작되었으며<br>
+                    리소스는 원저작자에게 있습니다.</h2>
+                <span>본 사이트는 Chrome에 최적화 되어있습니다.</span>
+            </div>
+
+            <div class="modal-box modal-back">
+                <ul class="modal-list">
+                    <h3> <i class="fas fa-bullhorn"></i> <u>이렇게 수정하였습니다</u> :) </h3>
+                    <li>1. 사용자가 하단 펼침메뉴를 클릭했을 때 나타나는 메뉴가 <b>하단메뉴버튼과 겹쳐지지 않도록 위치를 조정</b>하여 <b>시각적 안정감</b>을 제공하고자 하였습니다.
+                    </li>
+                    <li>2. 공지사항의 글목록과 하단 펼침메뉴에 마우스오버했을 때 <b>밑줄</b>을 표시하여 <b>사용자가 원하는 정보에 더 쉽게 접근</b>할 수 있도록 하였습니다.</li>
+                </ul>
+            </div>
+
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- 전체 레이아웃 -->
     <div class="wrap">
         <!-- 상단 -->
         <header class="header">
@@ -147,7 +191,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- 컨트롤러 -->
                             <div class="sw-service-control">
                                 <div class="swiper-pagination sw-service-pg"></div>
@@ -173,7 +217,7 @@
 
                         <div class="good">
                             <a href="#">
-                                <img src="images/today_1.jpg" alt="" class="good-img">
+                                <img src="images/today_1.jpg" alt="상품이미지" class="good-img">
                                 <span class="good-name">식물성유산균 쌀 요거트</span>
                                 <span class="good-price">2000원 <em>(20ml)</em></span>
                                 <button class="good-heart">heart</button>
@@ -182,7 +226,7 @@
                         </div>
                         <div class="good">
                             <a href="#">
-                                <img src="images/today_2.jpg" alt="" class="good-img">
+                                <img src="images/today_2.jpg" alt="상품이미지" class="good-img">
                                 <span class="good-name">식물성유산균 쌀 요거트</span>
                                 <span class="good-price">2000원 <em>(20ml)</em></span>
                                 <button class="good-heart">heart</button>
@@ -191,7 +235,7 @@
                         </div>
                         <div class="good">
                             <a href="#">
-                                <img src="images/today_3.jpg" alt="" class="good-img">
+                                <img src="images/today_3.jpg" alt="상품이미지" class="good-img">
                                 <span class="good-name">식물성유산균 쌀 요거트</span>
                                 <span class="good-price">2000원 <em>(20ml)</em></span>
                                 <button class="good-heart">heart</button>
@@ -199,7 +243,7 @@
                         </div>
                         <div class="good">
                             <a href="#">
-                                <img src="images/today_4.jpg" alt="" class="good-img">
+                                <img src="images/today_4.jpg" alt="상품이미지" class="good-img">
                                 <span class="good-name">식물성유산균 쌀 요거트</span>
                                 <span class="good-price">2000원 <em>(20ml)</em></span>
                                 <button class="good-heart">heart</button>
@@ -242,7 +286,7 @@
                             <div class="best-one good">
                                 <a href="#">
 
-                                    <img src="images/best_1.jpg" alt="" class="good-img">
+                                    <img src="images/best_1.jpg" alt="상품이미지" class="good-img">
                                     <span class="good-name">매일아침 튼튼플러스</span>
                                     <span class="good-price"><b>2000원</b> <em>(20ml)</em></span>
 
@@ -255,7 +299,7 @@
 
                             <div class="good">
                                 <a href="#">
-                                    <img src="images/best_2.jpg" alt="" class="good-img">
+                                    <img src="images/best_2.jpg" alt="상품이미지" class="good-img">
                                     <span class="good-name">식물성유산균 쌀 요거트</span>
                                     <span class="good-price"><b>2000원</b> <em>(20ml)</em></span>
                                     <button class="good-heart">heart</button>
@@ -271,7 +315,7 @@
 
                             <div class="good">
                                 <a href="#">
-                                    <img src="images/best_3.jpg" alt="" class="good-img">
+                                    <img src="images/best_3.jpg" alt="상품이미지" class="good-img">
                                     <span class="good-name">식물성유산균 쌀 요거트</span>
                                     <span class="good-price"><b>2000원</b> <em>(20ml)</em></span>
                                     <button class="good-heart">heart</button>
@@ -283,7 +327,7 @@
 
                             <div class="good">
                                 <a href="#">
-                                    <img src="images/best_4.jpg" alt="" class="good-img">
+                                    <img src="images/best_4.jpg" alt="상품이미지" class="good-img">
                                     <span class="good-name">식물성유산균 쌀 요거트</span>
                                     <span class="good-price"><b>2000원</b> <em>(20ml)</em></span>
                                     <button class="good-heart">heart</button>
@@ -295,7 +339,7 @@
 
                             <div class="good">
                                 <a href="#">
-                                    <img src="images/best_5.jpg" alt="" class="good-img">
+                                    <img src="images/best_5.jpg" alt="상품이미지" class="good-img">
                                     <span class="good-name">식물성유산균 쌀 요거트</span>
                                     <span class="good-price"><b>2000원</b> <em>(20ml)</em></span>
                                     <button class="good-heart">heart</button>
@@ -362,7 +406,7 @@
                         <div class="notice-wrap">
                             <ul class="notice-list">
                                 <li>
-                                    <a href="#">융복합 건강기능식품 고지사항 안내</a>
+                                    <a href="#">녹즙, 발효유 제품 가격 조정 안내</a>
                                     <span>2021.12.09</span>
                                 </li>
                                 <li>
@@ -370,7 +414,7 @@
                                     <span>2021.09.24</span>
                                 </li>
                                 <li>
-                                    <a href="#">융복합 건강기능식품 고지사항 안내</a>
+                                    <a href="#">풀무원녹즙 패키지 리뉴얼 안내</a>
                                     <span>2020.08.27</span>
                                 </li>
                             </ul>
@@ -435,34 +479,33 @@
                         <div class="link-wrap">
                             <button class="link-bt">
                                 풀무원가족사이트
+                                <span></span>
                             </button>
 
                             <ul class="link-list">
                                 <li>
                                     <ul class="link-sub">
-                                        <li><a href="#">링크정보 1</a></li>
-                                        <li><a href="#">링크정보 2</a></li>
-                                        <li><a href="#">링크정보 3</a></li>
-                                        <li><a href="#">링크정보 4</a></li>
-                                        <li><a href="#">링크정보 5</a></li>
+                                        <li><a href="#">풀무원건강생활</a></li>
+                                        <li><a href="#">풀무원로하스</a></li>
+                                        <li><a href="#">풀무원베이비밀</a></li>
+                                        <li><a href="#">풀무원잇슬림</a></li>
+                                        <li><a href="#">풀무원아미오</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <ul class="link-sub">
-                                        <li><a href="#">링크정보</a></li>
-                                        <li><a href="#">링크정보</a></li>
-                                        <li><a href="#">링크정보</a></li>
-                                        <li><a href="#">링크정보</a></li>
-                                        <li><a href="#">링크정보</a></li>
+                                        <li><a href="#">풀무원홀딩스</a></li>
+                                        <li><a href="#">#풀무원</a></li>
+                                        <li><a href="#">뮤지엄김치간</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <ul class="link-sub">
-                                        <li><a href="#">링크정보</a></li>
-                                        <li><a href="#">링크정보</a></li>
-                                        <li><a href="#">링크정보</a></li>
-                                        <li><a href="#">링크정보</a></li>
-                                        <li><a href="#">링크정보</a></li>
+                                        <li><a href="#">풀무원샘물</a></li>
+                                        <li><a href="#">올가홀푸드</a></li>
+                                        <li><a href="#">풀무원푸드앤컬처</a></li>
+                                        <li><a href="#">풀무원푸드머스</a></li>
+                                        <li><a href="#">엑소후레쉬</a></li>
                                     </ul>
                                 </li>
                             </ul>
