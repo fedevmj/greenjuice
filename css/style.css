@@ -304,7 +304,7 @@ body {
 
 .modal-back .modal-list li {
   padding-top: 5px;
-  font-size: 14px;
+  font-size: 15px;
   color: #666;
   line-height: 1.6;
   word-break: keep-all;
@@ -535,7 +535,6 @@ body {
   top: 50%;
   transform: translateY(-50%);
   display: block;
-
   overflow: hidden;
 }
 
@@ -547,7 +546,6 @@ body {
   background: url("../images/ico_sprite_pc.png") no-repeat;
   float: left;
   font-size: 0;
-
   margin-left: 25px;
 }
 
